@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="myCalcolator">
+        <div class="disply">
+        <div class="displayScreen">
+            <input type="text" class="txtDisplyScreen" id="txtDisplyScreen" placeholder="0" readonly >
+        </div>
+    </div>
+        <div class="numPad">
+            <div class="leftSidePad">
+                <div class="topKeys">
+                    <div class="k1" id="numKey" onclick= clearScreen('')>AC</div>
+                    <div class="k2">+/-</div>
+                    <div class="k3"  id="numKey" onclick= keyClicked('%')>%</div>
+                </div>
+
+            <class="bottomKeys">
+                  
+                <div class="row">
+                    <div class="seven" id="numKey" onclick= keyClicked(7)>7</div>
+                    <div class="eight" id="numKey"onclick= keyClicked(8)>8</div>
+                    <div class="nine" id="numKey"onclick= keyClicked(9)>9</div>
+                </div>    
+                  
+                <div class="row">
+                    <div class="four" id="numKey" onclick= keyClicked(4)>4</div>
+                    <div class="five id="numKey" onclick= keyClicked(5)>5</div>
+                    <div class="six" id="numKey" onclick= keyClicked(6)>6</div>
+                </div>
+                
+                <div class="row">
+                    <div class="one" id="numKey" onclick= keyClicked(1)>1</div>
+                    <div class="two" id="numKey" onclick= keyClicked(2)>2</div>
+                    <div class="three" id="numKey" onclick= keyClicked(3)>3</div>
+                </div>
+                
+               
+                <div class="bottomKeys">
+                    <div class="zero" id="numKey" onclick= keyClicked(0)>0</div>
+                    <div class="dot" id="numKey" onclick= keyClicked('.')>.</div>
+                    
+                </div>
+            </div>  
+            
+             
+        <div class="rightSidePad">
+            <div class="operatorsKeys">
+                <div class="divide"   id="numKey" onclick= keyClicked('/')>/</div>
+                <div class="multiply"   id="numKey" onclick= keyClicked('*')>*</div>
+                <div class="subtract"   id="numKey" onclick= keyClicked('-')>-</div>
+                <div class="add"   id="numKey" onclick= keyClicked('+')>+</div>
+                <div class="equal"   id="numKey" onclick= getResult('')>=</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="calculator.js" async defer></script>
+</body>
+
+</html>

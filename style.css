@@ -1,0 +1,235 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+    margin: 0px;
+    color: aliceblue;
+    font-weight: bold;
+    /* background-image: url("https://media.wired.com/photos/66df337dfb7d4953b6dc5f31/master/w_1920,c_limit/Screenshot%202024-09-09%20at%2010.42.09%E2%80%AFAM.png"); */
+    /* background-size: cover; */
+}
+
+
+.displayScreen,
+.rightSidePad,
+.leftSidePad,
+.numPad {
+
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.displayScreen {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%; */
+    /* height: 50px; */
+    margin: 5px;
+}
+
+.numPad {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row; */
+    /* margin: 5px; */
+    /* padding: 5px; */
+    /* width: 80%; */
+    /* height: 80%; */
+}
+
+.myCalcolator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    background-color: #1C1C1C;
+    padding: 25px;
+    margin: 100px;
+border-radius: 25px;
+    /* width: 400px; */
+    /* height: 500px; */
+    /* margin-bottom: 250px; */
+}
+
+.rightSidePad {
+    /* width: 25%; */
+    /* margin: 5px; */
+    /* padding: 5px; */
+    height: 100%;
+    /* border: 2px solid black; */
+
+}
+
+.leftSidePad {
+    display: block;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-direction: row;
+    /* width: 75%; */
+    /* margin: 5px; */
+    /* padding: 5px; */
+    height: 100%;
+    /* border: 2px solid black; */
+
+}
+
+.topKeys {
+    /* border: 1px solid black; */
+
+}
+
+.bottomKeys {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.dot,
+.k1,
+.k2,
+.k3,
+.divide,
+.multiply,
+.subtract,
+.add,
+.equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: #505050;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.zero {
+    /* margin-left: 60px !important; */
+    width: 60%;
+    border-radius: 40px;
+}
+
+.k1,
+.k2,
+.k3 {
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.zero:hover,
+.dot:hover,
+.k1:hover,
+.k2:hover,
+.k3:hover,
+.divide:hover,
+.multiply:hover,
+.subtract:hover,
+.add:hover,
+.equal:hover {
+    font-style: italic;
+    font-size: larger;
+    cursor: pointer;
+    opacity: 50%;
+
+}
+
+.one:active,
+.two:active,
+.three:active,
+.four:active,
+.five:active,
+.six:active,
+.seven:active,
+.eight:active,
+.nine:active,
+.zero:active,
+.dot:active,
+.k1:active,
+.k2:active,
+.k3:active,
+.divide:active,
+.multiply:active,
+.subtract:active,
+.add:active,
+.equal:active {
+    font-style: italic;
+    font-size: larger;
+    cursor: pointer;
+    opacity: 80%;
+
+}
+.row,
+.topKeys,
+.bottomKeys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* width: 100%; */
+    /* height: 20px; */
+    /* border: 1px solid black; */
+}
+
+.operatorsKeys {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+
+}
+
+.divide,
+.multiply,
+.subtract,
+.add,
+.equal {
+    background-color: #FF9500 !important;
+}
+
+.txtDisplyScreen {
+    width: 100%;
+    /* height: auto; */
+     height: 25px; 
+    text-align: right !important;
+     font-weight: bolder;
+    /*font-size: large;
+    color: #FF9500; */
+    background-color: #1C1C1C;
+    border: 0px;
+}
+
+input[type="text"] {
+    color: white !important;
+    /* border: 1px solid black !important;; */
+ border-radius: 40px;   
+}
